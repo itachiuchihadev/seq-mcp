@@ -207,6 +207,25 @@ const { server } = createSeqMcpServer({ client });
 
 ---
 
+## 📊 Dumping Dummy Test Data to Seq
+
+You can dump a rich set of realistic dummy test logs (covering multiple microservices, all standard log levels from `Verbose` to `Fatal`, HTTP requests, DB deadlocks, timeouts, stack traces, and date ranges) directly into Seq:
+
+```bash
+# Provide API key via command-line option:
+npm run dump-testdata -- --api-key YOUR_SEQ_API_KEY
+
+# Or set SEQ_API_KEY and run:
+SEQ_API_KEY=YOUR_SEQ_API_KEY npm run dump-testdata
+
+# Custom event count and lookback window:
+npm run dump-testdata -- -k YOUR_KEY -n 250 -d 7
+```
+
+If no API key is specified in arguments or environment, the script will interactively prompt for it in the terminal.
+
+---
+
 ## 🧪 Development & Testing
 
 ```bash

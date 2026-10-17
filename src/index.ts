@@ -9,3 +9,4 @@ export * from "./tools/query.js";
 export * from "./tools/signals.js";
 export * from "./tools/convert.js";
 export * from "./tools/tail.js";
+export * from "./data-generator.js";

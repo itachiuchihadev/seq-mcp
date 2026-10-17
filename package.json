@@ -28,6 +28,7 @@
     "prepublishOnly": "npm run test && npm run build",
     "dev": "tsx src/cli.ts",
     "start": "node dist/cli.js",
+    "dump-testdata": "tsx scripts/dump-testdata.ts",
     "test": "vitest run",
     "test:watch": "vitest"
   },
