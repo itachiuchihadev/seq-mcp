@@ -47,7 +47,7 @@ Examples for Claude Desktop / Cursor (mcpServers):
   {
     "seq": {
       "command": "npx",
-      "args": ["-y", "@abhishekkumar00019/seq-mcp"],
+      "args": ["-y", "--silent", "@abhishekkumar00019/seq-mcp"],
       "env": {
         "SEQ_SERVER_URL": "http://localhost:5341",
         "SEQ_API_KEY": "your-seq-api-key"

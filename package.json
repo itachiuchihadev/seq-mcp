@@ -1,6 +1,6 @@
 {
   "name": "@abhishekkumar00019/seq-mcp",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Model Context Protocol (MCP) server for Datalust Seq structured logging",
   "type": "module",
   "main": "dist/index.js",

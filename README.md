@@ -40,7 +40,7 @@ Add `seq` to your Claude Desktop configuration (`claude_desktop_config.json`):
   "mcpServers": {
     "seq": {
       "command": "npx",
-      "args": ["-y", "@abhishekkumar00019/seq-mcp"],
+      "args": ["-y", "--silent", "@abhishekkumar00019/seq-mcp"],
       "env": {
         "SEQ_SERVER_URL": "http://localhost:5341",
         "SEQ_API_KEY": "your-seq-api-key"
@@ -50,12 +50,14 @@ Add `seq` to your Claude Desktop configuration (`claude_desktop_config.json`):
 }
 ```
 
+> **Note**: The `--silent` flag prevents `npm`/`npx` from printing command banner headers to stdout, ensuring clean JSON-RPC protocol communication over stdio.
+
 ### Cursor IDE
 
 In Cursor Settings → **Features** → **MCP Servers** → **Add New MCP Server**:
 * **Name**: `seq`
 * **Type**: `command`
-* **Command**: `npx -y @abhishekkumar00019/seq-mcp`
+* **Command**: `npx -y --silent @abhishekkumar00019/seq-mcp`
 
 Or configure via `.cursor/mcp.json`:
 
@@ -64,7 +66,7 @@ Or configure via `.cursor/mcp.json`:
   "mcpServers": {
     "seq": {
       "command": "npx",
-      "args": ["-y", "@abhishekkumar00019/seq-mcp"],
+      "args": ["-y", "--silent", "@abhishekkumar00019/seq-mcp"],
       "env": {
         "SEQ_SERVER_URL": "http://localhost:5341",
         "SEQ_API_KEY": "your-seq-api-key"
